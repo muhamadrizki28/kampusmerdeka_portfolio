@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 990px) {
+  .utama-about-me {
+    width: 100%;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .caption-blog {
+    font-size: 1.4vw;
+  }
+  .text-about {
+    padding-top: 1em !important;
+  }
+}
+
+@media (max-width: 790px) {
+  .pencari {
+    visibility: hidden;
+  }
+  #carouselExampleCaptions {
+    width: 100% !important;
+  }
+}
+@media (max-width: 321px) {
+  .nama {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 550px) {
+  /* Project */
+  .latihan1,
+  .latihan2 {
+    top: 2em;
+    padding: 0.5em;
+    border-radius: 10px;
+    font-size: 2.5vw !important;
+  }
+}
+@media screen and (max-width: 360px) {
+  nav .navbar-brand {
+    visibility: hidden;
+  }
+  nav button.icon-klik {
+    box-shadow: 0 0 3px black !important;
+    position: relative;
+    top: 0.8em;
+    width: 100%;
+  }
+  .menu-blog,
+  .menu-view {
+    width: 100% !important;
+  }
+  .menu-main {
+    text-align: center;
+  }
+}
+
+/* Gambar */
+
+#bayangan:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#tombol {
+  background-color: rgba(0, 255, 254, 0.2);
+}
+#tombol:hover {
+  background-color: aqua;
+}
+/* Jumbotron */
+.jumbotron {
+  padding-top: 2rem;
+  background-color: #e2edff;
+}
+#murizzz:hover {
+  box-shadow: 300px 45px 300px 9px aqua;
+}
+.utama-about-me {
+  font-family: 'Poppins', sans-serif;
+}
+#projects {
+  height: 100vh;
+  background-color: #e2edff;
+  font-family: 'Poppins', sans-serif;
+  overflow-y: scroll;
+}
+#projects .card-text {
+  font-size: 16px !important;
+}
+#projects .card-title {
+  font-size: 20px !important;
+}
+#blog {
+  background-color: #e2edff;
+}
+.caption-blog {
+  color: white !important;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)) !important;
+  width: fit-content;
+  margin: auto;
+  padding: 0.3em;
+  border-radius: 5px;
+}
+section {
+  padding-top: 5rem;
+}
+
+/* Project */
+.latihan1,
+.latihan2 {
+  position: absolute;
+  top: 2em;
+  background-color: rgba(16, 112, 224, 0.7);
+  padding: 0.5em;
+  color: white;
+  border-radius: 10px;
+  left: 1.8em;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}

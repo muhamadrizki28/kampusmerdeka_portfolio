@@ -1,0 +1,107 @@
+.navbar-toggler {
+  border: 2px solid rgb(0, 153, 255) !important;
+  border-radius: 25%;
+  margin: 15px 15px;
+  padding: 8px 8px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.navbar-toggler span {
+  background: rgb(0, 153, 255);
+  display: block;
+  width: 22px;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: 0px;
+  margin-top: 0px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.navbar-toggler span + span {
+  margin-top: 5px;
+}
+
+.navbar-toggler:hover {
+  border: 2px solid #d4a81e;
+}
+
+.navbar-toggler:hover span {
+  background: #fff;
+}
+
+/* animasi icon span di navbar-toggler */
+.navbar-toggler.close {
+  margin: 15px 15px;
+  padding: 8px 8px;
+}
+.navbar-toggler.close span.toggler-tengah {
+  display: none;
+}
+.navbar-toggler.close span.toggler-atas {
+  transform: translateY(150%) rotate(45deg);
+}
+.navbar-toggler.close span.toggler-bawah {
+  transform: translateY(-150%) rotate(-45deg);
+}
+
+.pencari input {
+  background: transparent;
+  border-radius: 0;
+  opacity: 0.8;
+  width: 90px;
+  transition: 0.5s ease;
+}
+.pencari input:hover {
+  width: 150px;
+}
+.pencari button {
+  background: #fff;
+  opacity: 0.7;
+}
+
+/* back-to-top */
+.back-to-top {
+  z-index: 9999;
+  position: fixed;
+  top: 90%;
+  font-size: 2.5rem;
+  right: 0.5rem;
+}
+.back-to-top a {
+  color: #1887d0;
+}
+.back-to-top:hover a {
+  color: #fff;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 11px;
+}
+::-webkit-scrollbar:hover {
+  width: 14px;
+}
+::-webkit-scrollbar-track {
+  background-color: #0d6efd;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #0d6efd;
+  border-radius: 10px;
+  border: 2px solid rgb(15, 75, 116);
+  box-shadow: 0 0 10px 0 rgb(0, 153, 255);
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar-toggler {
+    border-radius: 0;
+  }
+}
