@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+.left-box-education .list-item {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  &:not(:last-child) {
+    border-bottom: 0.225693rem solid rgb(35, 31, 32);
+  }
+}
+.left-box-education .list-item .col a p {
+  color: #292929;
+}
+
+.right-box-judul-education .bullet .title {
+  width: 100%;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.225693rem solid rgb(35, 31, 32);
+  padding: 2.5rem 0;
+  color: rgb(34, 33, 33);
+}
+
+// Garis
+.right-box-judul-education .bullet {
+  position: relative;
+  i {
+    font-size: 2.6rem;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    left: 1.9rem;
+    width: 0.3rem;
+    height: 50%;
+    background-color: #292929;
+    margin-top: 4.2rem;
+  }
+}
+
+.white-space-pre {
+  white-space: pre;
+}
+#pendidikan .container .text-up h2 {
+  font-size: 3rem;
+}

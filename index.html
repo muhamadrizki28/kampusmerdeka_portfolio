@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/boostrap5/css/bootstrap.min.css" />
     <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <script src="https://kit.fontawesome.com/ae9e49c983.js" crossorigin="anonymous"></script>
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <title>Portfolio Muhamad Rizki</title>
     <!-- css -->
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <!-- SCSS -->
+    <link rel="stylesheet" href="assets/scss/portfolio.css" />
     <!-- Bootsrtrap Icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" />
     <!-- Favicon -->
@@ -63,6 +64,9 @@
                 <a id="bayangan" class="dropdown-item fw-bold text-light" href="https://toko.ly/murizcustom/home?isSeller=true" style="border-radius: 10px; color: white; font-size: 15px" target="_blank">My Shop</a>
               </li>
             </ul>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#pendidikan">Pendidikan</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link text-light" href="#contact">Contact</a>
             </li>
@@ -319,30 +323,139 @@
     </section>
     <!-- Akhir Blog  -->
     <!-- Contact -->
-    <section id="contact" style="background-color: #0099ff">
+    <section id="pendidikan" style="background-color: #0099ff">
       <div class="container">
         <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Contact Me</h2>
+          <div class="col text-up">
+            <h2 class="fw-bold">Pendidikan & Pengalaman</h2>
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-md-8">
-            <form action="mailto:mrizki37dc@gmail.com" method="post" enctype="text/plain">
-              <div class="mb-3">
-                <label for="namalengkap" class="form-label">Nama Lengkap</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" />
+          <div class="col-md-12">
+            <section class="content">
+              <div class="row">
+                <div class="col personal-details me-4 left-box-education">
+                  <div class="row list-item">
+                    <div class="col-auto align-self-center">
+                      <div class="icon d-flex justify-content-center">
+                        <i class="fa-solid fa-school"></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <a class="text-decoration-none white-space-pre">
+                        <p>Universitas Nasional</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row list-item">
+                    <div class="col-auto align-self-center">
+                      <div class="icon d-flex justify-content-center">
+                        <i class="fa-solid fa-school"></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <a v-bind:href="'tel:'+ phone" class="text-decoration-none white-space-pre">
+                        <p>SMKN 28 Jakarta</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row list-item">
+                    <div class="col-auto align-self-center">
+                      <div class="icon d-flex justify-content-center">
+                        <i class="fa-solid fa-school"></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <a v-bind:href="'tel:'+ phone" class="text-decoration-none white-space-pre">
+                        <p>SMPN 37 Jakarta</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row list-item">
+                    <div class="col-auto align-self-center">
+                      <div class="icon d-flex justify-content-center">
+                        <i class="fa-solid fa-school"></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <a v-bind:href="'tel:'+ phone" class="text-decoration-none white-space-pre">
+                        <p>SDN 016 Jakarta</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col col-8 right-box-judul-education">
+                  <div class="row bullet">
+                    <div class="col-auto pt-2">
+                      <i class="bi bi-circle-fill"></i>
+                    </div>
+                    <div class="col">
+                      <p class="title">
+                        Indonesia Millenial Connect <br />
+                        - Web Developer
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row bullet">
+                    <div class="col-auto pt-2">
+                      <i class="bi bi-circle-fill"></i>
+                    </div>
+                    <div class="col">
+                      <p class="title">
+                        Himasi UNAS <br />
+                        - Web Developer
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row bullet">
+                    <div class="col-auto pt-2">
+                      <i class="bi bi-circle-fill"></i>
+                    </div>
+                    <div class="col">
+                      <p class="title">
+                        Yaumi Indonesia <br />
+                        - Intern Full Stack Web
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row bullet">
+                    <div class="col-auto pt-2">
+                      <i class="bi bi-circle-fill"></i>
+                    </div>
+                    <div class="col">
+                      <p class="title">
+                        Freelance <br />
+                        - Website
+                      </p>
+                    </div>
+                  </div>
+                  <!-- <div class="row record bullet">
+                    <div class="col-auto">
+                      <i class="bi bi-record-circle"></i>
+                    </div>
+                    <div class="col">
+                      <p style="white-space: pre-line">{{ professionalSummary }}</p>
+                    </div>
+                  </div> -->
+                  <!-- <div class="row mt-5">
+                    <div class="col-auto bullet pt-2">
+                      <i class="bi bi-circle-fill"></i>
+                    </div>
+                    <div class="col">
+                      <p class="title">Work Experience</p>
+                    </div>
+                  </div> -->
+                  <!-- <div class="row record mb-4 bullet" v-for="employment in employmentHistory">
+                    <div class="col-auto">
+                      <i class="bi bi-record-circle"></i>
+                    </div>
+                    <div class="col">
+                      <p class="text-uppercase fw-bold position-relative">cc</p>
+                    </div>
+                  </div> -->
+                </div>
               </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email Anda</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" />
-              </div>
-              <div class="mb-3">
-                <label for="pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="pesan" rows="5"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary mb-5">Kirim</button>
-            </form>
+            </section>
           </div>
         </div>
       </div>
@@ -437,11 +550,142 @@
           </div>
         </div>
       </div>
+    </section>
+    <!-- AKhir Skill -->
+
+    <!-- Pendidikan -->
+    <section id="contact" class="mt-3" style="background-color: #0099ff">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Contact Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <form action="mailto:mrizki37dc@gmail.com" method="post" enctype="text/plain">
+              <div class="mb-3">
+                <label for="namalengkap" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email Anda</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email" />
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea class="form-control" id="pesan" rows="5"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary mb-5">Kirim</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skill -->
+    <div class="p-3 mb-2 text-dark shadow-lg p-3 mb-5 text-center text-uppercase fs-3 fw-bold" style="background-color: #0099ff">Kegiatan & Minat</div>
+    <section id="skill">
+      <div class="container">
+        <div class="row row-cols-md-12 justify-content-md-around">
+          <div class="col-md-5 text-uppercase fw-bold">
+            <h1>Kegiatan</h1>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                  <button class="accordion-button fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    PIC Kegiatan di Desa 3T
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                  <div class="accordion-body fw-normal">PIC Kegiatan Pemberdayaan Desa 3T di Lombok - Bilok Petung dari Millenial Mengabdi 1.0</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                  <button class="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    Ketua Webinar - Himasi
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                  <div class="accordion-body fw-normal">Ketua Webinar acara Himasi dengan Judul "Get To Know What Is A Cyber Security".</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                  <button class="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    Panitia Workshop
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                  <div class="accordion-body fw-normal">Panitia Workshop dengan Judul "Introduce Of A Wireshark".</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFourth">
+                  <button class="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFourth" aria-expanded="false" aria-controls="panelsStayOpen-collapseFourth">
+                    Peserta Lomba Code Challenge
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFourth" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFourth">
+                  <div class="accordion-body fw-normal">Lomba Code Challenge Yang diadakan Himti</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 text-uppercase fw-bold">
+            <h1>Minat</h1>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Minat</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td class="fw-normal">Mempelajari dunia programming khususnya web developers</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td class="fw-normal">Berpartisipasi Dalam Kegiatan Sosial</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td class="fw-normal">DIGITAL MARKETING, Photoshop</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td class="fw-normal">Futsal</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Youtube -->
+          <div class="col-md-6 text-uppercase fw-bold mt-5">
+            <h1 class="text-center">Video</h1>
+            <div class="embed-responsive embed-responsive-16by9">
+              <!-- <iframe class="embed-responsive-item" src="//www.youtube.com/embed/zB4I68XVPzQ"></iframe> -->
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/RxwNyMN-3rs"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path fill="#0099ff" fill-opacity="1" d="M0,64L480,128L960,192L1440,128L1440,320L960,320L480,320L0,320Z"></path>
       </svg>
     </section>
-    <!-- AKhir Skill -->
+    <!-- AKhir  -->
     <!-- footer -->
     <footer class="text-light text-center pb-5 fw-bold fs-4" style="background-color: #0099ff">
       <p>
@@ -455,6 +699,9 @@
       <a href="#home"><i class="fas fa-chevron-circle-up"></i></a>
     </div>
 
+    <!-- Boostrap 5 JS -->
+    <script src="assets/boostrap5/js/bootstrap.min.js"></script>
+    <script src="assets/boostrap5/js/popper.min.js"></script>
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/js/main.js"></script>
